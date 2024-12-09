@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bot.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65eaeaf1bfc8e5dbf63a3cedcd525657b4133404")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bot.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bot.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

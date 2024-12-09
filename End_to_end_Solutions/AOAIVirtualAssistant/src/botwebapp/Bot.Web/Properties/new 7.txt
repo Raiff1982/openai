@@ -1,0 +1,18 @@
+using System.Threading.Tasks;
+
+public class MyBot
+{
+    private readonly SentimentAnalysis _sentimentAnalysis;
+
+    public MyBot(SentimentAnalysis sentimentAnalysis)
+    {
+        _sentimentAnalysis = sentimentAnalysis;
+    }
+
+    public async Task<string> GenerateResponse(string userInput, string userId)
+    {
+        // Implement the logic to generate a response based on user input
+        var sentiment = await _sentimentAnalysis.AnalyzeSentiment(userInput);
+        return $"Sentiment: {sentiment}";
+    }
+}

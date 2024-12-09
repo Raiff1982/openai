@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>H:\source\openai\End_to_end_Solutions\AOAIVirtualAssistant\src\botwebapp\Bot.Web\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>False|2024-12-17T01:23:06.2088708Z||;False|2024-12-16T19:21:32.3513908-06:00||;True|2024-12-16T19:03:37.9728930-06:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

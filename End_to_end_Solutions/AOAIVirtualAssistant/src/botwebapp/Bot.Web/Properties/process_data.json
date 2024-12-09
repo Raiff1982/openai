@@ -1,0 +1,20 @@
+{
+  "name": "process_data",
+  "description": "Process the provided data and optionally learn from a provided file",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "object",
+        "description": "The data to process"
+      },
+      "file_path": {
+        "type": "string",
+        "description": "Path to the file to learn from (optional)"
+      }
+    },
+    "required": [
+      "data"
+    ]
+  }
+}

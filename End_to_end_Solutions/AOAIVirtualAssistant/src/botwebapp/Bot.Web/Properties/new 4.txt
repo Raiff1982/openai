@@ -1,0 +1,19 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Bot Interface</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="userInput">Enter your message:</label>
+            <input type="text" class="form-control" id="userInput" name="userInput" />
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <div>
+        <h2>Response:</h2>
+        <p>@Model.Response</p>
+    </div>
+</div>

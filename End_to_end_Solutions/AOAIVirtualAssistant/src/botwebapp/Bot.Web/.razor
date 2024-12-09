@@ -1,0 +1,40 @@
+   @page "/chat"
+   @inject IJSRuntime JS
+
+   <h3>Chat with Bot</h3>
+
+   <EditForm Model="inputModel" OnValidSubmit="SendMessage">
+       <DataAnnotationsValidator />
+       <ValidationSummary />
+
+       <div class="mb-3">
+           <label for="messageInput" class="form-label">Enter Message:</label>
+           <InputText id="messageInput" class="form-control" @bind-Value="inputModel.Message" />
+       </div>
+
+       <button type="submit" class="btn btn-primary">Send</button>
+   </EditForm>
+
+   @if (!string.IsNullOrEmpty(response))
+   {
+       <div class="mt-3">
+           <h4>Bot Response:</h4>
+           <p>@response</p>
+       </div>
+   }
+
+   @code {
+       private InputModel inputModel = new InputModel();
+       private string? response;
+
+       private async Task SendMessage()
+       {
+           response = await JS.InvokeAsync<string>("botInterop.sendMessage", inputModel.Message);
+       }
+
+       public class InputModel
+       {
+           public string Message { get; set; }
+       }
+   }
+   

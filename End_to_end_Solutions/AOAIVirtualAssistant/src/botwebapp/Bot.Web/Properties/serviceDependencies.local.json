@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "connectionInfo": "App registration: Pi-The-Assistant, Tenant: Raiff's Bits (raiffsbits.com - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    }
+  }
+}
